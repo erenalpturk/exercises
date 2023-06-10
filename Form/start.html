@@ -7,13 +7,83 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>HTML Lesson</title>
+    <title>Form</title>
     <style>
       label {
         display: block;
       }
+
+      h1 { text-align: center; }
+      
+      body { border : 7px solid #ccc;
+      width: 300px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin: 10px;}
+      
+      form { padding-left: 10px; }
+  
+  
+
+      ul {border: 3px solid #ccc}
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <h1>Payment Form</h1>
+    <form action="Alperen">
+      <label for="email">E-Mail:</label>
+      <input type="text" id="email" email="email">
+      <br>
+      <label for="password">Password:</label>
+      <input type="text" id="password" password="password">
+      <br>
+      <label for="name">Name and Lastname:</label>
+      <input type="text" id="name" email="name">
+      <br>
+      <label for="bday">Date of birth:</label>
+      <input type="text" id="bday" email="bday">
+      <br>
+      <label for="number">Telephone number:</label>
+      <input type="tel" id="number" email="number">
+      <br>
+
+      <label for="fPlan">Free Plan</label>
+      <input type="checkbox" id="fPlan" fPlan="fPlan">
+
+      <label for="plan">Plan:</label>
+      <select id="plan" name="plan">
+        <option value="free">Free Plan</option>
+        <optgroup label="Monthly">
+          <option value="plan1">Plan 1 ($10)</option>
+          <option value="plan2">Plan 2 ($20)</option>
+          <option value="plan3">Plan 3 ($30)</option>
+          </optgroup>
+      </select>
+      <br>
+
+      <label for="pPlan">Pro Plan</label>
+      <input type="checkbox" id="pPlan" pPlan="pPlan">
+      
+      <br>
+
+      <label for="ccnumber">Credit card number:</label>
+      <input type="number" id="ccnumber" ccnumber="ccnumber">
+      <br>
+      <label for="CVC">CVC:</label>
+      <input type="number" id="CVC" CVC="CVC">
+      <br>
+
+      <label for="edate">Expiration date:</label>
+      <input type="date" id="edate" CVC="edate">
+
+      <br>
+
+      <label for="adress">Billing Address:</label>
+      <input type="text" id="adress" adress="adress">
+      <br>
+      
+    </form>
+
+  </body>
 </html>
