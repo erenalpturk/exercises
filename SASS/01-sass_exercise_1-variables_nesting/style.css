@@ -1,0 +1,30 @@
+div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  padding: 10px;
+}
+div h1 {
+  color: green;
+}
+div section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+}
+div section article:nth-child(odd) {
+  border: 1px solid green;
+  padding: 25px;
+  color: blue;
+}
+div section article:nth-child(even) {
+  border: 1px solid green;
+  padding: 25px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

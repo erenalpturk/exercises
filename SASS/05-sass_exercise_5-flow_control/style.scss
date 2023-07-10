@@ -1,0 +1,113 @@
+$color-first: red;
+$color-second: blue;
+$color-third: green;
+
+@function func ($px) {
+    @return calc(#{$px / 16}rem);
+}
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin square {
+    width: func(45);
+    height: func(45);
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+
+}
+
+div {
+    @include display;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    border: func(1) solid $color-first;
+    padding: 10px;
+    gap: func(20);
+
+    h1 {
+        color: $color-third;
+        text-decoration: underline;
+        text-decoration-color: $color-second;
+    }
+
+    h2 {
+        margin-top: func(20);
+        padding: func(16);
+        border: func(1) solid $color-first;
+        color: $color-third;
+    }
+
+    .firstSec {
+        @include display;
+        border: 1px solid $color-third;
+
+        article:nth-child(odd) {
+            border: 1px solid $color-third;
+            padding: func(25);
+            color: $color-second;
+        }
+
+        article:nth-child(even) {
+            border: 1px solid $color-third;
+            padding: func(25);
+            color: $color-first;
+        }
+    }
+
+    .thirdSec {
+        @include display;
+        font-size: x-large;
+        width: 100%;
+        border: 1px solid;
+        border-color: $color-second ;
+
+        article {
+            border: 0px;
+            color: $color-third;
+        }
+    }
+
+    .secondSec {
+        @include display;
+        align-items: start;
+        display: flex;
+        gap: 3vh;
+
+        .fs-1rem {
+            @include square();
+            font-size: 15px;
+        }
+
+        .fs-2rem {
+            @include square();
+            font-size: 30px;
+        }
+
+        .fs-3rem {
+            @include square();
+            font-size: 40px;
+        }
+    }
+}
+
+$multiplier: 5;
+
+@for $i from 1 through 20 {
+    .square:nth-child(#{$i}) {
+        background-color: darken(white, $i * $multiplier);
+        color: lighten(black, $multiplier * $i);
+    }
+
+    @if $i ==10 {
+        .square:nth-child(#{$i}) {
+            background-color: $color-second;
+            color: $color-first;
+        }
+    }
+}

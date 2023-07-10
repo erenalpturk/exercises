@@ -1,0 +1,46 @@
+$color-first: red;
+$color-second: blue;
+$color-third: green;
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-first;
+    padding: 10px;
+    gap: 20px;
+
+    h1 { color: $color-third;}
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color-third;
+
+        article:nth-child(odd) {
+            border: 1px solid $color-third;
+            padding: 25px;
+            color:$color-second;
+          }
+        article:nth-child(even) {
+            border: 1px solid $color-third;
+            padding: 25px;
+            color:$color-first;
+          }
+    }
+
+    section:last-child {
+        font-size: x-large;
+        width: 100%;
+        border-color:$color-second ;
+
+        article {
+            border: 0px;
+            color: $color-third;
+        }
+    }
+
+}
