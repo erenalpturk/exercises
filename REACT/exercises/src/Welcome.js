@@ -1,14 +1,15 @@
 
-function Welcome({name}) {
+function Welcome({ name, age }) {
     return (
         <div className="App">
-            HELLO {name}
+            <p>HELLO {name}</p>
+            <p>Your age is {age}</p>
         </div>
     );
 }
 
 Welcome.defaultProps = {
     name: 'Guest'
-  };
+};
 
 export default Welcome;
