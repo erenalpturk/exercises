@@ -1,14 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
-function Counter() {
+function Counter(props) {
     const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCount(count + props.amount)
+        }, props.interval);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, [count])
+
     return (
         <div className="App">
-            {setInterval(() => {
-                setCount(count + 1)
-            }, 1000)}
-            <h1>count</h1>
+            <h1>{count}</h1>
         </div>
     );
 }

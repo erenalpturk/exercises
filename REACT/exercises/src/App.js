@@ -6,9 +6,12 @@ function App() {
   return (
     <div className="App">
       <Welcome
-      s="90"
+        s="90"
       />
-      <Counter/>
+      <Counter
+        interval={2000}
+        amount={1}
+        />
     </div>
   );
 }
