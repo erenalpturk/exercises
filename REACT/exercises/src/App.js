@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Welcome
-      s="1"
+      s="90"
       />
     </div>
   );

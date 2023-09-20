@@ -5,7 +5,7 @@ function Welcome({ name, s }) {
         <div className="App">
 
             {name ? <p>Hello <strong>{name}</strong></p> : <p>Hello <strong>guest</strong></p>}
-            {s ? <p><Age age={s} /></p> : ""}
+            {s > 18 && s <65 ? <p> <Age age={s} /></p> : ""}
         </div>
     );
 }
