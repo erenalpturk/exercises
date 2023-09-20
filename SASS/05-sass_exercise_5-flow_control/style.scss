@@ -96,12 +96,10 @@ div {
     }
 }
 
-$multiplier: 5;
-
 @for $i from 1 through 20 {
     .square:nth-child(#{$i}) {
-        background-color: darken(white, $i * $multiplier);
-        color: lighten(black, $multiplier * $i);
+        background-color: darken(white, $i * 5);
+        color: lighten(black, 5 * $i);
     }
 
     @if $i ==10 {
