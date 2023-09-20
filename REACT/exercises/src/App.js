@@ -1,17 +1,12 @@
 import './App.css';
 import Counter from './Counter';
-import Welcome from './Welcome';
+import Clickcounter from './Clickcounter';
 
 function App() {
   return (
     <div className="App">
-      <Welcome
-        s="90"
+      <Clickcounter
       />
-      <Counter
-        interval={2000}
-        amount={1}
-        />
     </div>
   );
 }
