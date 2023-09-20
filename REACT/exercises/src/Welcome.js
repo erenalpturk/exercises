@@ -1,11 +1,13 @@
+import Age from "./Age";
 
-function Welcome({ name, age }) {
+function Welcome({ name }) {
     return (
         <div className="App">
 
-                {name ? <p>Hello <strong>{name}</strong></p> : <p>Hello <strong>guest</strong></p> }
-            
-            <p>Your age is {age}</p>
+            {name ? <p>Hello <strong>{name}</strong></p> : <p>Hello <strong>guest</strong></p>}
+
+            <Age
+                age="24" />
         </div>
     );
 }
