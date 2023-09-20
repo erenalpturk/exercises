@@ -7,4 +7,8 @@ function Welcome({name}) {
     );
 }
 
+Welcome.defaultProps = {
+    name: 'Guest'
+  };
+
 export default Welcome;
