@@ -1,0 +1,32 @@
+#baslik {
+color: wheat;}
+
+
+body {
+    background-image: url(./82317.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+}
+
+#allContainer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./4002676.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: rgb(194, 244, 200);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input{
+    border-radius: 10px;
+}
+
