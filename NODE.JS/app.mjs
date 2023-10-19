@@ -1,4 +1,6 @@
-// const crypto = require('crypto');
+// exercise 1
+
+//const crypto = require('crypto');
 
 // console.log("curves", crypto.getCurves()); // Kullanılabilecek eğrileri listeleyin
 // console.log("hashes", crypto.getHashes()); // Kullanılabilecek hash fonksiyonlarını listeleyin
@@ -8,6 +10,16 @@
 // console.log(randomId);
 
 
-const hi = require('./module.js');
 
-hi()
+//exercise 2
+// const hi = require('./module.js');
+
+// hi()
+
+
+
+function hi() {
+    console.log("hello ecma.");
+}
+
+export default hi;
