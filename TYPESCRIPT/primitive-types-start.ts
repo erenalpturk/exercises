@@ -4,18 +4,15 @@
 
 // Add type annotations to each of these variables.
 
+let country: string = "Italy";
 
+let year: undefined = undefined;
 
-let country : string= "Italy";
+let averageTemperature: number = 23.6;
 
-let year: undefined|number= undefined;
-
-let averageTemperature:number = 23.6;
-
-let visited:boolean = true;
+let visited: boolean = true;
 
 let currency: null = null;
-
 
 // Change the type annotations on these variables so they are correct.
 
